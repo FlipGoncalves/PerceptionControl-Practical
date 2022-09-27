@@ -61,7 +61,7 @@ def move(p, U):
             temp_2.append(round(t, 4))
         temp.append(temp_2)
     
-    temp = [[y / sum([sum(z) for z in temp]) for y in x] for x in temp]
+    temp = [[round(y / sum([sum(z) for z in temp]), 4) for y in x] for x in temp]
 
     return temp
 

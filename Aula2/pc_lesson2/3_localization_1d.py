@@ -45,7 +45,7 @@ def move(p, U):
             
         temp.append(round(t, 4))
 
-    temp = [x / sum(temp) for x in temp]
+    temp = [round(x / sum(temp)) for x in temp]
     
     return temp if temp != [] else p
 
